@@ -89,7 +89,7 @@ public class SalesPage {
     }
     public void saveCashInvoice(){
 
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement option=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class=\"btn btn-success mr-2 mb-2\" and text()=\" حفظ \"]")));
         option.click();
     }
